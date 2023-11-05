@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:black;
+    position: relative;
+
+}
+
+.container
+{
+    
+    height: 500px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #ffffff85;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+button
+{
+    width: 70px;
+    height: 70px;
+    border-radius:100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: none;
+   border: none;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+}
+input
+{
+    appearance: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background: none;
+    padding: 10px;
+    font-size: larger;
+    backdrop-filter: blur(35px);
+    color: white;
+}
+
+.first_circle
+{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: animation_circle1 15s infinite;
+}
+@keyframes animation_circle1  {
+    50%{
+       transform: translateY(50px);
+        
+    }
+}
+.second_circle
+{
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    right: 20%;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg,#5648d8,#8641f4);
+    animation: animation_circle2 15s infinite;
+
+}
+@keyframes animation_circle2{
+    50%{
+        transform: translateX(25px);
+        
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%; 
+    }
+
+    table {
+        width: 100%; 
+    }
+
+    td {
+        width: 25%;
+    }
+
+}
